@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:id="@+id/delete_row">
+
+    <EditText
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/comment"
+        android:hint="Type Here"
+        android:textAlignment="center"/>
+
+    <ImageView
+        android:id="@+id/img"
+        android:adjustViewBounds="false"
+        android:background="@mipmap/addpic"
+        android:layout_width="140sp"
+        android:layout_height="140sp" />
+
+    <ImageView
+        app:srcCompat="@mipmap/close"
+        android:id="@+id/delete_cross"
+        android:layout_weight="1"
+        android:layout_width="50sp"
+        android:layout_height="50sp" />
+
+</LinearLayout>
